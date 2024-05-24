@@ -11,7 +11,78 @@ venngage.com/blog/blue-color-palettes/&docid=ngiFOEA-GcZDyM&w=1600&h=900&source=
 	list-style: none;
 }
 
-header {
+html{
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	background: linear-gradient(to right,#c1d1e8 , #bfc4cb, #c1d1e8);
+}
+
+
+/*homepage*/
+.Menu{
+	overflow: hidden;
+	background-color: #03054b;
+	padding: 20px 20px;
+   
+  }
+
+/* Style the header links */
+.Menu a{
+	float: right;
+	color: white;
+	text-align: center;
+	padding: 1.15rem;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+	text-transform: uppercase;
+   
+  }
+/* Change the background color on mouse-over */
+.Menu a:hover {
+	background-color: #9ebbe7;
+	color: black;
+  }
+
+/* Style the active/current link*/
+.Menu li a.actives {
+	background-color:  #161851;;
+	color: white;
+  }
+  
+  /* Float the link section to the right */
+.Menu li {
+	float: right;
+  }
+  
+
+
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+header img {
+	position:absolute;
+	width: 500px ;
+	transition: transform 0.3s ease;
+	top: 0;
+	z-index: 1;
+   
+  
+} 
+
+
+.logo img{
+	max-width: 180px;
+	margin-left: 25px;
+}
+
+
+
+  
+
+/*header {
 	background:  white;
 	max-width: 1200px;
 	height: 200px;
@@ -32,7 +103,7 @@ nav {
 	max-width: 180px;
 	margin-left: 25px;
 }
-.Menu{
+Menu{
 	max-width: 1000px;
 	margin: auto 15px;
 	background-color: #03054b;
@@ -49,13 +120,13 @@ nav {
 	
 	
 }
-.Menu ul li {
+Menu ul li {
 	display: inline-block;
 
 
 }
 
-.Menu ul li a {
+Menu ul li a {
 	display: inline-block;
 	font-size: 20px;
 	font-weight: 600;
@@ -69,7 +140,7 @@ nav {
 	transition: 0.4s ease;
 }
 
-.Menu ul li:not(:last-child) a {
+Menu ul li:not(:last-child) a {
 	margin-right: 25px;
 }
 
@@ -86,7 +157,7 @@ nav {
 	bottom: 10px;
 	left: 0;
 }
-
+*/
 
 /*Main Index */
 /* The hero image */
@@ -97,7 +168,7 @@ nav {
 	position: relative;
   } 
 .hero-image img{
-    height: 300px;
+    height: 400px;
     width: 100%;
    
        
@@ -131,6 +202,7 @@ nav {
 	text-align: center;
 	cursor: pointer;
 	text-transform: uppercase;
+	border-radius: 15px;
 }
 .hero-text button:hover {
 	background-color: #9ebbe7;
@@ -140,13 +212,22 @@ nav {
 	box-sizing: border-box;
   }
 
-  .homeMission{
+
+.mainSecond{
+	display: block;
+	justify-content: space-between;
+	padding: 3rem;
+}
+
+.homeMission{
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-around;
   padding: 16px;
-  background-color:  #9ebbe7 ;
+  background-color:  #9ebbe7;
+  
+
 }
 
 
@@ -156,10 +237,43 @@ nav {
 
 .homeMission p {
 	font-size: 18px;
+	padding: 1rem;
+}
+
+.HomeTestimony{
+	padding: 3rem;
+}
+
+.HomeTestimony h2{
+	font-size: 25px;
+	text-align: center;
+}
+.HomeTestimony h4{
+	padding: 15px;
 }
 
 
-.testimony{
+  
+.testimonyColumns{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+  }
+  
+.Tescolumn {
+	flex: 1;
+	border: 1px solid #666;
+	border-radius: 30px;
+	margin: 20px;
+	padding: 10px;
+	background:  #98b0d4;
+	transition: 0.3s;
+	
+  }
+
+
+/*.testimony{
 	padding: 80px 0;
 }
 .testimony h2{
@@ -192,14 +306,14 @@ nav {
 }
 
 /* Float four columns side by side */
-.column {
+/*.column {
 	float: left;
 	width: 25%;
 	padding: 0 10px;
   }
   
   /* Remove extra left and right margins, due to padding */
-  .row {
+/*.row {
 	align-items: center;
 	margin: auto;
 	padding: 25px 15px;
@@ -210,18 +324,19 @@ nav {
 	
   
   /* Clear floats after the columns */
-  .row:after {
+/*.row:after {
 	content: "";
 	display: table;
 	clear: both;
   }
 
-
+*/
 
 
 .wrapper{
 	max-width: 75%;
 	margin: auto;
+	padding: 3rem;
 }
 
 .wrapper p{
@@ -297,9 +412,44 @@ footer {
 	background-color:  #03054b;
 	padding-top: 35px;
   }
+.footer-company-name{
+	color:  #666;
+}
+
+.footer-links{
+	color: #a0b2cd;
+	margin: 20px 0 12px;
+	
+	
+
+}
+.footer-links a{
+	padding: 0.5rem;
+
+}
+.footer-links a:hover{
+	color: aliceblue;
+
+}
+
+.footer-left h3 {
+	color: white ;
+	font: normal 36px;
+	margin: 0;
+
+}
+
+
+
+
+
+
+
+
+
 
 .social {
-	display: flex;
+	display: block;
 	justify-content: space-between;
 	padding: 10px;
 	margin-right: 1.5rem;
@@ -314,6 +464,11 @@ footer {
 
 .social img{
    width: 40px;
+   border-radius: 15px;
+}
+.social img:hover{
+	background: #010111;
+	overflow: hidden;
 }
 
 footer p{
@@ -323,6 +478,198 @@ footer p{
  
 
 
+@media only  screen and (max-width: 559px) {
+ 
+    .logo img {
+		width: 80px;
+		height: auto;
+		top: 20px;
+	}
+
+	#navigation {
+		margin-left: 2vw;
+		list-style-type: none;
+		
+		
+	   
+	}
+
+	
+	.Menu{
+		display: block;
+	}
+	#navigation li a {
+		border:none;
+		text-decoration: none;
+		padding: 5px;
+		margin: 5px;
+		color: white;
+		display: block; 
+		
+	   
+	
+	}
+	#navigation li a:hover{
+		background-color:  #98b0d4;
+		color: #03054b;
+	}
+	
+	  
+	#hamButton {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 10px;
+		width: fit-content;
+		font-size: 1.5rem;
+		padding: .5rem;
+		color: navy;
+		z-index: 1;
+	}
+
+	nav ul {
+		display: none;
+	}
+	nav ul.open {
+		display: block;
+	}
+	#hamButton span:nth-child(1) {display: block;}
+    #hamButton span:nth-child(2) {display: none;} 
+
+    #hamButton.open span:nth-child(1) {display: none;}
+    #hamButton.open span:nth-child(2) {display: block;} 
+
+
+	.hero-image h2{
+		font-size: 18px;
+	}
+
+    .homeMission{
+	display: block;
+	align-items: center;
+	width: 100%;
+	justify-content: space-around;
+	padding: 16px;
+	background-color:  #9ebbe7;
+	
+  
+  }
+  
+  
+  .homeMission h2 {
+	  font-size: 18px;
+  }
+  
+  .homeMission p {
+	  font-size: 15px;
+	  padding: 0.5rem;
+  }
+
+  .wrapper{
+	max-width: 80%;
+	margin: auto;
+	padding: 1.5rem;
+}
+
+.wrapper p{
+	margin: 1rem 0;
+	text-align: center;
+}
+
+.wrapper h3{
+	margin: 18px 0;
+	text-align: center;
+	
+}
+
+
+.accordion{
+	background-color: white;
+	cursor: pointer;
+	font-size: 1rem;
+	width: 100%;
+	padding: 1rem 2rem;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+
+}
+
+.accordion i{
+	font-size: 1rem;
+}
+.active,
+.accordion:hover{
+	background-color: #c9daf2;
+
+}
+
+.pannel {
+	padding: 0 2rem 2.5rem 2rem;
+	background-color: white;
+	overflow: hidden;
+	background-color:  #c9daf2;
+	display: none;
+}
+
+.pannel p{
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1.2rem;
+	line-height: 1.4;
+}
+
+.faq{
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	margin: 10px 0;
+
+}
+.faq.active{
+	border: none;
+}
+
+
+
+
+    
+	footer{
+		display: block;
+		justify-content: space-between;
+		padding: 25px;
+		margin: 25px;
+	}
+	.footer-right {
+		display: flex;
+		padding-top: 30px;
+		margin-left: 3.5em;
+		margin-right: 3em;
+		align-items: center;
+		
+		
+		
+		
+	}
+	.footer-center{
+		padding-top: 25px;
+	}
+
+	.social{
+		margin-right: 1.5rem;
+		margin-left: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+		
+		
+
+	}
+	
+	
+		 
+	
+	}
 
   
 

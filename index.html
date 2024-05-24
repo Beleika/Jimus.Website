@@ -30,37 +30,63 @@
         
         <div class="Menu">
 
-            <button id="hamButton">&#9776;</button>
+            <button id="hamButton"  class>
+                <span>&#9776;</span>
+                <span>X</span>
+    
+            </button>
+
             <ul id="navigation" >
-                <li> <a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="Contact.html">Contact Us</a></li>
+                <li> <a href="Contact.html  ">Contact</a></li>
+                <li><a href="Services.html ">Services</a></li>
+                <li><a href=" about.html">About</a></li>
+                <li><a class="actives" href=" index.html">Home</a></li>
                 
               </ul>
 
         </div>
         </nav>
 
+       
 
+
+
+        
         
 
     </header>
 
+
+
      <main class="homeMain">
         <div class="hero-image">
-            <img src= "images/hero3.jpg" alt="Rose ">
+           
+            <picture>
+            <source media="(max-width: 559px)" srcset="images/picture2.jpg">
+            <source media="(max-width: 900px)" srcset="images/img4.jpg">
+            <source media="(min-width: 32.5em)" srcset="images/picture1.jpg">
+            <img src="images/picture1.jpg" alt="Rose ">
+
+        </picture>
+      
                 <div class="hero-text">
                   <h2>Building  Cleaning  Services</h2>
                   <button onclick="window.location.href = 'contac.html';">Join Us!</button>
                 </div>
               </div>
 
-
+    <div class="mainSecond">
         
         <div class="homeMission">
+        <picture>
+            <source media="(max-width: 559px)" srcset="images/img5.jpg">
+            <source media="(max-width: 900px)" srcset="images/picture2.jpg">
+            <source media="(min-width: 32.5em)" srcset="images/picture2.jpg">
+            <img src= "images/picture2.jpg" alt="Rose ">
+
+        </picture>
             
-            <img src= "images/pic2.jpg" alt="Rose ">
+          
             <div>
             <h2> Why choose Us</h2>
              <p> 1. We offer thorough and reliable cleaning services to ensure your workspace is spotless and inviting. </p> 
@@ -74,41 +100,41 @@
         </div>
 
 
-        <section class="row">
+        <section class="HomeTestimony">
 
-        <div class="testimony">
             <div>
                 <h2>Hear From Our Client  </h2>
              </div>
 
-            <div class="column">
-                <div class="card">
-                <h4 class="titleName"> Sophonie Timothee </h4>
+        <div>
+
+        <div class="testimonyColumns">
+            
+
+            <div class="Tescolumn">
+               
+                <h4 class="titleName"> Fegens Ferrier </h4>
                 <p> I highly recommend Building Cleaning Services for anyone looking for professional and reliable cleaning. They always leave our building sparkling clean!
                 </p>
-            </div> </div>
+            </div>
 
-            <div class="column">
-                <div class="card">
+            <div class="Tescolumn">
+                
                 <h4 class="titleName"> Sylvain Sylvestre </h4>
                 <p>  I'm so impressed with the results every time Building Cleaning Services cleans our home. They truly go above and beyond to make sure everything is spotless!
                 </p>
-            </div> </div>
+             </div>
 
-            <div class="column">
-                <div class="card">
+            <div class="Tescolumn">
+               
                 <h4 class="titleName"> Gregory Jn Baptiste </h4>
                 <p> Our office was in desperate need of a deep clean, and we were amazed by the professionalism and efficiency of Building Cleaning Services.
                     Our workspace has never looked better, and their attention to detail exceeded our expectations.
                 </p>
-            </div> </div>
+          </div>
 
-            <div class="column">
-                <div class="card">
-                <h4 class="titleName"> Sophonie Timothee </h4>
-                <p> I highly recommend Building Cleaning Services for anyone looking for professional and reliable cleaning. They always leave our building sparkling clean!
-                </p>
-            </div> </div>
+          
+            
 
             
 
@@ -130,11 +156,7 @@
 
         <div class="wrapper">
             <h2>FAQ</h2>
-            <h3> We've compiled a comprehensive list of frequently asked questions to provide clarity and transparency, ensuring you have all the information 
-                necessary to make informed decisions about our services. 
-                If you don't see your question answered,
-                feel free to reach out to our team for personalized assistance. Let us help you achieve a clean and welcoming environment for your building!
-
+            <h3> We have compiled a list of questions commonly asked, if you have any other questions please let us know
             </h3>
 
             <div class="faq active">
@@ -225,7 +247,7 @@
             
 
           
-        </div>
+        </div>  </div>
 
 
             
@@ -235,14 +257,60 @@
      </main>
 
 
-    <footer classe="Home">
+    <footer classe="footer-distributed">
+
+           <div class="footer-left">
+            <h3>Jimus <span>Building Cleaning Services</span></h3>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html ">Contact</a>
+
+            </p>
+
+            <p class="footer-company-name">copyright 2024  All rights reserved</p>
+
+           </div>
+
+           <div class="footer-center">
+            <p class="footer-email">Jimus@gmail.com </p>
+            <p class="footer-phone-number">+(801) 661 4211</p>
+            <a class="footer-location"  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6199.9080718923005!2d-76.9381089!3d39.016362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c414fc96595f%3A0x9392357b75e0ed79!2s9314%20Cherry%20Hill%20Rd%2C%20College%20Park%2C%20MD%2020740!5e0!3m2!1sen!2sus!4v1714743229002!5m2!1sen!2sus" >
+                <img src="images/location.jpg"  width="40" alt="Location">
+            </a>
+
+
+           </div>
+
+           <div class="footer-right">
+              <p class="footer-company-about">
+                <div class="social">
+
+            
+                    <div> <a href="https://facebook.com" target="_blank">
+                          <img src="images/facebook.png" alt="fb icon">
+                      </a></div>
+                            
+                 
+                      <div> <a href="https://instagram.com" target="_blank">
+                      <img src="images/instagram.png" alt="instagram icon">
+                  </a></div>
+
+
+              </p>
+
+           </div>
 
         
 
-
+    
 
         
-        <div class="social">
+        <!--<div class="social">
+
+            
             <div> <a href="https://facebook.com" target="_blank">
                   <img src="images/facebook.png" alt="fb icon">
               </a></div>
@@ -264,33 +332,16 @@
             </a>
           </div>
 
+        -->
+
     </footer>
+
+    <script src="main.js"></script>
 
 
     
   <script>
-    var acc = document.getElementsByClassName
-    ("accordion");
-    var i;
-
-    for(i = 0; i <acc.length ; i++){
-        acc[i].addEventListener("click", function
-        (){
-            this.classList.toggle("active");
-            this.parentElement.classList.toggle
-            ("active");
-
-            var pannel = this.nextElementSibling;
-
-            if(pannel.style.display === "block"){
-                pannel.style.display = "none";
-
-            } else {
-                pannel.style.display = "block";
-            }
-         
-        });
-    }
+   
   </script>  
 </body> 
 </html>

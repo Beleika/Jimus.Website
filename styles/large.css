@@ -8,5 +8,14 @@
     display: none; /* hide hamburger button */
 } 
 
+footer {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	padding: 10px;
+	background-color:  #03054b;
+	padding-top: 35px;
+  }
+
 
 }
