@@ -12,24 +12,25 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Jimus Building Cleaning Services</title>
 </head>
 <body>
     <header>
-         <nav>
+         <!--<nav>
 
         <div class="logo">
             <picture>
-                    <img src="images/logo3.jpg" alt="logo">
+                    <img src="images/logo12.png" alt="logo">
             </picture>
     
         </div>
 
         
         <div class="Menu">
-
+         
             <button id="hamButton"  class>
                 <span>&#9776;</span>
                 <span>X</span>
@@ -43,29 +44,46 @@
                 <li><a class="actives" href=" index.html">Home</a></li>
                 
               </ul>
-
+              
         </div>
-        </nav>
+        </nav> -->
 
-       
+            <picture> <img src= "images/logo12.png" alt="Rose "></picture>
+            <div class="header">
+                <div class="header-right">
+                  <a class="tive" href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                 <!-- <a href="market.html">Market</a> -->
+                  <!--<a href="services.html">Services</a> -->
+                  <!--<a href="contactUs.html">  &#9993; Contact Us</a> -->
+                  <div class="dropdown">
+                    <button class="dropbtn">Services
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="cleaning.html">Cleaning</a>
+                      <a href="landscape.html">Landscape Services</a>
+                      
+                      
+                    </div>
+                  </div> 
 
 
-
-        
-        
+                </div>
+              </div>   
 
     </header>
 
 
 
      <main class="homeMain">
-        <div class="hero-image">
+        <div class="Indexhero-image">
            
             <picture>
-            <source media="(max-width: 559px)" srcset="images/picture2.jpg">
-            <source media="(max-width: 900px)" srcset="images/img4.jpg">
-            <source media="(min-width: 32.5em)" srcset="images/picture1.jpg">
-            <img src="images/picture1.jpg" alt="Rose ">
+            <source media="(max-width: 559px)" srcset="images/pic25.jpg">
+            <source media="(max-width: 900px)" srcset="images/unplash25.jpg">
+            <source media="(min-width: 32.5em)" srcset="images/unplash2.avif">
+            <img src="images/unplash2.avif" alt="Rose ">
 
         </picture>
       
@@ -74,6 +92,9 @@
                   <button onclick="window.location.href = 'contac.html';">Join Us!</button>
                 </div>
               </div>
+
+
+              
               
 
     <div class="mainSecond">
@@ -101,51 +122,59 @@
         </div>
 
 
-        <section class="HomeTestimony">
+        <div class="HomeTestimony">
 
-            <div>
-                <h2>Hear From Our Client  </h2>
-             </div>
+            <div class="slideshow-container">
 
-        <div>
-
-        <div class="testimonyColumns">
-            
-
-            <div class="Tescolumn">
-               
-                <h4 class="titleName"> Fegens Ferrier </h4>
-                <p> I highly recommend Building Cleaning Services for anyone looking for professional and reliable cleaning. They always leave our building sparkling clean!
-                </p>
-            </div>
-
-            <div class="Tescolumn">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img  src="images/pic50.jpg" style="width:100%"  alt="Rose ">
+                  <div class="Testext"> <h2 class="titleName"> "Fegens Ferrier" </h2>
+                    <p> I highly recommend Building Cleaning Services for anyone looking for professional and reliable cleaning. They always leave our building sparkling clean!
+                    </p>    </div>
+                </div>
                 
-                <h4 class="titleName"> Sylvain Sylvestre </h4>
-                <p>  I'm so impressed with the results every time Building Cleaning Services cleans our home. They truly go above and beyond to make sure everything is spotless!
-                </p>
-             </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img  src="images/Tes5.avif" style="width:100%" alt="Rose ">
+                  <div class="Testext">  <h2 class="titleName"> "Sylvain Sylvestre" </h2>
+                    <p>  I'm so impressed with the results every time Building Cleaning Services cleans our home. They truly go above and beyond to make sure everything is spotless!
+                    </p> </div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/Tes2.avif" style="width:100%" alt="Rose ">
+                  <div class="Testext">  <h2 class="titleName"> "Gregory Jn Baptist" </h2>
+                    <p> Our office was in desperate need of a deep clean, and we were amazed by the professionalism and efficiency of Building Cleaning Services.
+                        Our workspace has never looked better, and their attention to detail exceeded our expectations.
+                    </p> </div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
 
-            <div class="Tescolumn">
-               
-                <h4 class="titleName"> Gregory Jn Baptiste </h4>
-                <p> Our office was in desperate need of a deep clean, and we were amazed by the professionalism and efficiency of Building Cleaning Services.
-                    Our workspace has never looked better, and their attention to detail exceeded our expectations.
-                </p>
-          </div>
 
           
             
 
             
-
+           </div>
             
             
 
-          
-        </div>
+       
 
-    </section>
+            </div>
 
   
 
@@ -245,97 +274,99 @@
 
 
 
-            
-
-          
-        </div>  </div>
-
-
-            
-
-        </div>
+    
 
      </main>
 
 
-    <footer classe="footer-distributed">
-
-           <div class="footer-left">
-            <h3>Jimus <span>Building Cleaning Services</span></h3>
-
-            <p class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="Services.html">Services</a>
-                <a href="Contact.html ">Contact</a>
-
-            </p>
-
-            <p class="footer-company-name">copyright 2024  All rights reserved</p>
-
-           </div>
-
-           <div class="footer-center">
-            <p class="footer-email">Jimus@gmail.com </p>
-            <p class="footer-phone-number">+(801) 661 4211</p>
-            <a class="footer-location"  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6199.9080718923005!2d-76.9381089!3d39.016362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c414fc96595f%3A0x9392357b75e0ed79!2s9314%20Cherry%20Hill%20Rd%2C%20College%20Park%2C%20MD%2020740!5e0!3m2!1sen!2sus!4v1714743229002!5m2!1sen!2sus" >
-                <img src="images/location.jpg"  width="40" alt="Location">
-            </a>
-
-
-           </div>
-
-           <div class="footer-right">
-              <p class="footer-company-about">
-                <div class="social">
-
-            
-                    <div> <a href="https://facebook.com" target="_blank">
-                          <img src="images/facebook.png" alt="fb icon">
-                      </a></div>
-                            
-                 
-                      <div> <a href="https://instagram.com" target="_blank">
-                      <img src="images/instagram.png" alt="instagram icon">
-                  </a></div>
-
-
-              </p>
-
-           </div>
-
-        
-
     
+     <footer>
 
-        
-        <!--<div class="social">
-
-            
-            <div> <a href="https://facebook.com" target="_blank">
-                  <img src="images/facebook.png" alt="fb icon">
-              </a></div>
-                    
-         
-              <div> <a href="https://instagram.com" target="_blank">
-              <img src="images/instagram.png" alt="instagram icon">
-          </a></div>
-
-        </div>
-         
-       
-
-        <div>
-            <p class="footer-email">Jimus@gmail.com </p>
-            <p class="footer-phone-number">+(801) 661 4211</p>
-            <a class="footer-location"  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6199.9080718923005!2d-76.9381089!3d39.016362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c414fc96595f%3A0x9392357b75e0ed79!2s9314%20Cherry%20Hill%20Rd%2C%20College%20Park%2C%20MD%2020740!5e0!3m2!1sen!2sus!4v1714743229002!5m2!1sen!2sus" >
-                <img src="images/location.jpg"  width="40" alt="Location">
-            </a>
+        <div class="main-content">
+  
+          <div class="left box">
+              <h2>Your Space, Our Expertise</h2>
+              <div class="content">
+                  <p> At Jimus Building Cleaning Services we provide exceptional building cleaning services that create healthier, safer, 
+                      and more welcoming environments for our clients. We are dedicated to maintaining the highest standards of cleanliness,
+                      efficiency, and professionalism in every project we undertake, ensuring complete customer satisfaction and a spotless reputation.
+                       </p>
+                  <div class="social">
+                      <a href="#"> <span class="fab fa-facebook-f" > </span> </a>
+                      <a href="#"> <span class="fab fa-instagram" > </span> </a>
+                  </div>
+              </div>
           </div>
-
-        -->
-
-    </footer>
+              
+  
+          <div class="center box">
+              <h2>Address</h2>
+                  <div class="content">
+                      <div class="place">
+                          <a href="#"> <span class="fas fa-map-marker-alt"></span></a>
+                          <span class="Footertext"> Utah, Orem</span>
+                      </div>
+  
+                      <div class="phone">
+                          <span class="fas fa-phone-alt"></span>
+                          <span class="Footertext">+(801) 661-4211</span>
+                      </div>
+  
+                      <div class="email">
+                          <span class="fas fa-envelope"></span>
+                          <span class="Footertext">jimus@gmail.com</span>
+                      </div>
+                  </div>
+          </div>
+  
+  
+          <div class="right box">
+              <h2>Contact Us</h2>
+              <div class="content"> 
+                  <form action="#">
+                      <div class="email">
+                              <div class="Footertext"> Email *</div>
+                              <input type="email" required>
+                          </div>
+  
+                          <div class="msg">
+                              <div class="Footertext"> Message *</div>
+                              <textarea rows="2" cols="25" required> </textarea>
+                          </div>
+  
+                          <div class="btn"> 
+                              <button type="submit">Send</button>
+                          </div>
+                      </form>
+                  </div>
+  
+          </div>
+  
+  
+  
+          </div>
+  
+  
+  
+    
+  
+       
+  
+  
+  
+  
+  <div class="footerSecond">
+      &copy; copyright 2024  All rights reserved |
+      <b>Jimus Building Cleaning Services </b> 
+      
+  
+      </div>  
+  
+  
+        
+  
+      </footer>
+  
 
     <script src="main.js"></script>
 

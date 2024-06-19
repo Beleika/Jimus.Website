@@ -9,6 +9,67 @@ footer{
     height: auto;
     top: 20px;
 }
+/*Testimony*/
+  /* Caption text */
+  .Testext {
+    color: #f2f2f2;
+    padding: 8px 12px 80px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    
+    background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 10px;
+     
+    
+    
+    }
+    .Testext p{
+    padding-top: 8px;
+    font-size: 14px;
+    }
+    .Testext h2{
+    font-size: 16px;
+    }
+
+/*Cleaning Page*/
+.cleaningTitle{
+    font-size: 1rem;
+  }
+  .cleaningRow{
+    flex-direction: column;
+  }
+  
+  .cleaningRow .cleaningCol {
+    margin: 20px auto;
+  }
+  
+  .cleaningCol img{
+    max-width: 90%;
+  }
+  .cleaningFour .cleaningCol{
+    width: 100%;
+  }
+  
+  .image-gallery{
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-gallery img{
+    width: 90%;
+  }
 
     
 }
