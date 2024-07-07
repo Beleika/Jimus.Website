@@ -33,7 +33,8 @@ body {
 	float: left;
 	color: white;
 	text-align: center;
-	padding: 12px;
+	padding: 8px 10px;
+	margin: 5px;
 	text-decoration: none;
 	font-size: 18px;
 	line-height: 25px;
@@ -250,7 +251,7 @@ Menu ul li:not(:last-child) a {
 	position: relative;
   }
 .Indexhero-image img{
-    height: 450px;
+    height: 500px;
     width: 100%;
 	        
 }
@@ -321,6 +322,15 @@ Menu ul li:not(:last-child) a {
   
 
 }
+.homeMission img {
+	transition: transform .3s ease;
+	border-radius: 15px;
+	cursor: pointer;
+
+}
+ .homeMission img:hover {
+	transform: scale(1.1);
+  } 
 
 
 .homeMission h2 {
@@ -345,8 +355,8 @@ Menu ul li:not(:last-child) a {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	filter: blur(4px);
-	-webkit-filter: blur(4px);
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
 	
 	
 }
@@ -620,6 +630,11 @@ footer{
 	
 
 }
+.left p{
+	text-align: justify;
+	align-items: center;
+	
+}
 
 .main-content{
 	display: flex;
@@ -690,7 +705,7 @@ form input,
   
 
   
-form .btn {
+form .btn{
 	border: none;
 	padding: 10px 20px;
 	color:#9ebbe7 ;
@@ -698,6 +713,25 @@ form .btn {
 	border-radius: 15px;
 	cursor: pointer;
 	transition: all;
+  }
+
+.right form button {
+	margin: 20px 10px;
+	border: none;
+	padding: 10px 20px;
+	background:  #9ebbe7;
+	color:  #03054b;
+	font-size: 1.1rem;
+	border-radius: 0.5px;
+	cursor: pointer;
+	transition: all;
+	border-radius: 25px;
+  }
+  
+  
+  .right form button:hover{
+	background: gray;
+  
   }
   
   
@@ -725,6 +759,15 @@ form .btn {
 .container {
 	padding: 64px;
   }
+
+.container img {
+	transition: transform .3s ease;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.container img:hover {
+	transform: scale(1.1);
+} 
 
   .container p {
 	font-size:20px; }
@@ -762,10 +805,21 @@ form .btn {
 	max-width: 100%;
   }
 
+  
+
 
 
 /*Cleaning Page */
 /* second part */
+
+.cleaningSecond img {
+	transition: transform .3s ease;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.cleaningSecond img:hover {
+	transform: scale(1.1);
+} 
 
 .cleaningThrid{
 	padding-top: 15px;
@@ -868,17 +922,28 @@ form .btn {
 /* Cleaning third part */
 /* Position the image container (needed to position the left and right arrows) */
 
+.cleaningThrid img{
+	transition: transform .3s ease;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.cleaningThrid img:hover {
+	transform: scale(1.1);
+} 
+
+
+
 .cleaningThrid h2{
 	padding-bottom: 25px;
 	text-align: center;
 }
-div.gallery {
+/*div.gallery {
 	border: 1px solid #ccc;
-  }
+  } */
   
-  div.gallery:hover {
+ /* div.gallery:hover {
 	border: 1px solid #777;
-  }
+  }*/
   
   div.gallery img {
 	width: 100%;
@@ -923,8 +988,28 @@ div.gallery {
 
   /*LandsCape*/
   .LandText{
-	padding-bottom: 20px;
-  }
+	padding-bottom: 25px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+	
+ }
+	/*
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	align-items: center;
+  }*/
+
+  .LandText h2{
+	padding-bottom: 15px;
+	text-align: center;
+}
+.LandText p{
+	text-align: center;
+}
   .PartLanScape{
 	padding-top: 20px;
 	padding-bottom: 25px;
@@ -1215,6 +1300,13 @@ header img {
 	
 }
 
+.left p{
+	text-align: justify;
+	align-items: center;
+	
+	
+}
+
 
 
 /* About Page */
@@ -1248,9 +1340,26 @@ header img {
 	padding-bottom: 20px;
   }
 
-  .LandText h2{
+  .LandText{
+	padding-bottom: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	
+ }
+	/*
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
 	align-items: center;
-  }
+  }*/
+
+  .LandText h2{
+	padding-bottom: 15px;
+	text-align: center;
+}
 
 
 

@@ -1,7 +1,14 @@
 @media screen and (max-width: 900px) {
 
-footer{
-    position: static;
+/*footer*/
+.main-content{
+	display: block;
+	justify-content: space-between;
+}
+
+.center .right{
+	padding-top: 5em;
+	
 }
 
 .logo img {
